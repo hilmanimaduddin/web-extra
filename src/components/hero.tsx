@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import myImage from "../../public/images/photo11.jpg";
 
 const Hero = () => {
   return (
@@ -94,8 +93,9 @@ const Hero = () => {
                 <div className="absolute -top-6 -left-6 w-full h-full bg-blue-200 rounded-2xl"></div>
                 <div className="relative bg-white p-2 rounded-2xl shadow-2xl border border-gray-100">
                   <Image
-                    src={myImage}
+                    src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184685/growtika-YOEHA0Ou8ZY-unsplash_pxtgbx.jpg"
                     alt="Website Dashboard Preview"
+                    layout="fill"
                     width={800} // tambahkan properti width
                     height={600} // tambahkan properti height
                     className="rounded-xl w-full h-auto"
