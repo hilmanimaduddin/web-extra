@@ -1,5 +1,6 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -68,7 +69,7 @@ const Hero = () => {
               <div className="flex items-center">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((item) => (
-                    <img
+                    <Image
                       key={item}
                       src={`https://i.pravatar.cc/150?img=${item}`}
                       alt="Client"
@@ -91,7 +92,7 @@ const Hero = () => {
               <div className="relative">
                 <div className="absolute -top-6 -left-6 w-full h-full bg-blue-200 rounded-2xl"></div>
                 <div className="relative bg-white p-2 rounded-2xl shadow-2xl border border-gray-100">
-                  <img
+                  <Image
                     src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="Website Dashboard Preview"
                     className="rounded-xl w-full h-auto"

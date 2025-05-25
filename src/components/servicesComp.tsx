@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
-  FaCode,
-  FaShoppingCart,
-  FaMobile,
   FaChartLine,
+  FaCode,
+  FaMobile,
   FaServer,
+  FaShoppingCart,
 } from "react-icons/fa";
 
 const ServicesComp = () => {
@@ -277,7 +278,7 @@ const ServicesComp = () => {
               </ol>
             </div>
             <div className="bg-gray-100 rounded-lg overflow-hidden">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88"
                 alt="Proses Pembuatan Website"
                 className="w-full h-full object-cover"

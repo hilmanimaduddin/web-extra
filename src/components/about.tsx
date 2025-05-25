@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { FaLightbulb, FaCode, FaChartLine, FaUsers } from "react-icons/fa";
 
 const About = () => {
@@ -35,7 +36,7 @@ const About = () => {
             className="relative"
           >
             <div className="bg-blue-100 rounded-2xl overflow-hidden h-full">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVhbXdvcmt8ZW58MHx8MHx8fDA%3D"
                 alt="Tim WebExtra"
                 className="w-full h-full object-cover"
@@ -169,7 +170,7 @@ const About = () => {
                 className="text-center"
               >
                 <div className="bg-gray-200 rounded-full w-40 h-40 mx-auto mb-4 overflow-hidden">
-                  <img
+                  <Image
                     src={member.photo}
                     alt={member.name}
                     className="w-full h-full object-cover"

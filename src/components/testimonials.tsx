@@ -99,13 +99,13 @@ const Testimonials = () => {
 
                 {/* Content */}
                 <p className="text-gray-700 italic mb-6">
-                  "{testimonial.content}"
+                  `{testimonial.content}`
                 </p>
 
                 {/* Author */}
                 <div className="flex items-center">
                   {/* <div className="mr-4">
-                    <img
+                    <Image
                       src={testimonial.avatar}
                       alt={testimonial.name}
                       className="w-12 h-12 rounded-full object-cover"
@@ -145,7 +145,7 @@ const Testimonials = () => {
               "/images/brands/brand-4.svg",
               "/images/brands/brand-5.svg",
             ].map((logo, index) => (
-              <img
+              <Image
                 key={index}
                 src={logo}
                 alt="Client Brand"

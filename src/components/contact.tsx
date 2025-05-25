@@ -43,7 +43,7 @@ const Contact = () => {
 
     try {
       // Simpan data ke database atau kirim email
-      const formDataJson = JSON.stringify(formData);
+      //   const formDataJson = JSON.stringify(formData);
       const text = `Halo, saya ${formData.name} dari ${formData.email} dengan nomor telepon ${formData.phone}. Saya ingin menghubungi Anda karena ${formData.subject}. Berikut adalah pesan saya: ${formData.message}`;
       const whatsappUrl = `https://wa.me/6282140078104?text=${encodeURIComponent(
         text

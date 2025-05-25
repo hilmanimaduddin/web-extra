@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import {
-  FaShieldAlt,
-  FaRocket,
+  FaChartLine,
   FaCogs,
   FaHeadset,
-  FaChartLine,
+  FaRocket,
+  FaShieldAlt,
 } from "react-icons/fa";
 
 const WhyChooseUs = () => {
@@ -41,12 +41,12 @@ const WhyChooseUs = () => {
     },
   ];
 
-  const stats = [
-    { value: "98%", label: "Kepuasan Klien" },
-    { value: "200+", label: "Proyek Selesai" },
-    { value: "5+", label: "Tahun Pengalaman" },
-    { value: "24", label: "Jam Support" },
-  ];
+  //   const stats = [
+  //     { value: "98%", label: "Kepuasan Klien" },
+  //     { value: "200+", label: "Proyek Selesai" },
+  //     { value: "5+", label: "Tahun Pengalaman" },
+  //     { value: "24", label: "Jam Support" },
+  //   ];
 
   return (
     <section className="py-20 bg-gray-50">
@@ -142,7 +142,7 @@ const WhyChooseUs = () => {
               </p>
             </div>
             <div className="flex items-center">
-              <img
+              <Image
                 src="/images/testimonials/client-1.jpg"
                 alt="Client"
                 className="w-12 h-12 rounded-full mr-4"

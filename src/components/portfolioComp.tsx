@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { useState } from "react";
 import { FiExternalLink, FiGithub, FiZoomIn } from "react-icons/fi";
 
 interface PortfolioItem {
@@ -169,7 +170,7 @@ const Portfolio = () => {
               <div className="h-full bg-white border border-gray-200 rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                 {/* Project Image */}
                 <div className="relative h-60 overflow-hidden">
-                  <img
+                  <Image
                     src={project.image}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -278,7 +279,7 @@ const Portfolio = () => {
                   />
                 </svg>
               </button>
-              <img
+              <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
                 className="w-full h-96 object-cover"

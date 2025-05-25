@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
-import { PortfolioItem } from "../types";
 import { useState } from "react";
+import { PortfolioItem } from "../types";
+import Image from "next/image";
+import Link from "next/link";
 
 const portfolioItems: PortfolioItem[] = [
   {
@@ -148,7 +150,7 @@ const Portfolio = () => {
               <div className="h-full bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300">
                 {/* Image */}
                 <div className="relative overflow-hidden h-60">
-                  <img
+                  <Image
                     src={item.image}
                     alt={item.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -223,12 +225,12 @@ const Portfolio = () => {
             Setiap proyek kami rancang khusus untuk memenuhi kebutuhan unik
             klien.
           </p>
-          <a
+          <Link
             href="/contact"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg shadow-md transition-colors duration-300"
           >
             Diskusikan Proyek Anda
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

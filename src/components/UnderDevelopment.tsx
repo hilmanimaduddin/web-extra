@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useState } from "react";
-import { FaTools, FaHome, FaBell, FaRocket } from "react-icons/fa";
+import { FaBell, FaHome, FaRocket, FaTools } from "react-icons/fa";
 
 const UnderDevelopmentPage = () => {
   const router = useRouter();

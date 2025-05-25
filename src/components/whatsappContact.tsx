@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaWhatsapp, FaPhone, FaRegClock, FaInfoCircle } from "react-icons/fa";
+import { FaInfoCircle, FaPhone, FaRegClock, FaWhatsapp } from "react-icons/fa";
 
 const WhatsAppContact = () => {
   const [formData, setFormData] = useState({

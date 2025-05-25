@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import {
+  FaEnvelope,
   FaExclamationTriangle,
   FaHome,
-  FaEnvelope,
   FaTools,
 } from "react-icons/fa";
 
