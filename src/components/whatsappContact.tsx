@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import { FaInfoCircle, FaPhone, FaRegClock, FaWhatsapp } from "react-icons/fa";
 
@@ -59,14 +60,14 @@ const WhatsAppContact = () => {
               <FaPhone className="mt-1 mr-3 flex-shrink-0" />
               <div>
                 <h3 className="font-semibold">Nomor WhatsApp</h3>
-                <a
+                <Link
                   href="https://wa.me/6281234567890"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline"
                 >
                   +62 812-3456-7890
-                </a>
+                </Link>
               </div>
             </div>
 
@@ -181,7 +182,7 @@ const WhatsAppContact = () => {
             </div>
 
             <div className="pt-2">
-              <a
+              <Link
                 href={generateWhatsAppLink()}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -198,7 +199,7 @@ const WhatsAppContact = () => {
               >
                 <FaWhatsapp className="mr-2 text-xl" />
                 Buka Chat WhatsApp
-              </a>
+              </Link>
               <p className="text-xs text-gray-500 mt-2">
                 *Pastikan nomor WhatsApp Anda aktif. Kami akan membalas pesan
                 Anda segera.

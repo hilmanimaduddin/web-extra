@@ -279,8 +279,9 @@ const ServicesComp = () => {
             </div>
             <div className="bg-gray-100 rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1579820010410-c10411aaaa88"
+                src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748185245/photo10_qgcuph.jpg"
                 alt="Proses Pembuatan Website"
+                layout="fill"
                 className="w-full h-full object-cover"
               />
             </div>

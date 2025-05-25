@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import {
   FaPhone,
@@ -104,12 +105,12 @@ const Contact = () => {
                     <h4 className="font-semibold text-gray-900 mb-1">
                       Telepon
                     </h4>
-                    <a
+                    <Link
                       href="tel:+6281234567890"
                       className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       +62 812-3456-7890
-                    </a>
+                    </Link>
                     <p className="text-sm text-gray-500 mt-1">
                       Senin-Jumat, 09:00 - 17:00 WIB
                     </p>
@@ -123,12 +124,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                    <a
+                    <Link
                       href="mailto:hello@webextra.id"
                       className="text-gray-600 hover:text-blue-600 transition-colors"
                     >
                       hello@webextra.id
-                    </a>
+                    </Link>
                     <p className="text-sm text-gray-500 mt-1">
                       Respon dalam 1-2 jam kerja
                     </p>
@@ -147,14 +148,14 @@ const Contact = () => {
                       <br />
                       Jakarta Selatan, Indonesia 12560
                     </p>
-                    <a
+                    <Link
                       href="https://maps.google.com/?q=Jl.+Teknologi+No.+123,+Jakarta+Selatan"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block text-blue-600 hover:text-blue-800 text-sm mt-2"
                     >
                       Lihat di Peta →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -183,14 +184,14 @@ const Contact = () => {
                       name: "Twitter",
                     },
                   ].map((social) => (
-                    <a
+                    <Link
                       key={social.name}
                       href="#"
                       aria-label={social.name}
                       className="bg-gray-200 hover:bg-blue-100 text-gray-700 hover:text-blue-600 p-3 rounded-full transition-colors"
                     >
                       {social.icon}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

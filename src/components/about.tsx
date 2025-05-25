@@ -37,8 +37,9 @@ const About = () => {
           >
             <div className="bg-blue-100 rounded-2xl overflow-hidden h-full">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVhbXdvcmt8ZW58MHx8MHx8fDA%3D"
+                src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184738/photo-1522071820081-009f0129c71c_1_yhbmgn.jpg"
                 alt="Tim WebExtra"
+                layout="fill"
                 className="w-full h-full object-cover"
               />
             </div>

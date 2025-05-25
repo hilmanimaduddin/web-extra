@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FiExternalLink, FiGithub, FiZoomIn } from "react-icons/fi";
 
@@ -37,7 +38,8 @@ const Portfolio = () => {
       category: "Website Perusahaan",
       description:
         "Website modern untuk restoran fine dining dengan sistem reservasi online dan menu digital.",
-      image: "https://images.unsplash.com/photo-1481487196290-c152efe083f5",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184824/photo3_ocfgy7.jpg",
       tags: ["React", "Tailwind CSS", "Node.js"],
       url: "https://contohrestoran.com",
       github: null,
@@ -49,7 +51,8 @@ const Portfolio = () => {
       category: "E-Commerce",
       description:
         "Platform e-commerce lengkap untuk brand fashion lokal dengan multi-pembayaran.",
-      image: "https://images.unsplash.com/photo-1727632027836-321f7da24681",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184850/photo4_t76sp4.jpg",
       tags: ["Next.js", "Stripe", "MongoDB"],
       url: "https://fashionstore.example.com",
       github: "https://github.com/username/fashion-store",
@@ -61,7 +64,8 @@ const Portfolio = () => {
       category: "Web App",
       description:
         "Aplikasi web custom untuk manajemen siswa, guru, dan administrasi sekolah.",
-      image: "https://images.unsplash.com/photo-1563394867331-e687a36112fd",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184911/photo6_icr4ub.jpg",
       tags: ["Laravel", "Vue.js", "MySQL"],
       url: "https://schoolsystem.example.com",
       github: null,
@@ -73,7 +77,8 @@ const Portfolio = () => {
       category: "Website Perusahaan",
       description:
         "Gallery online interaktif untuk fotografer profesional dengan lightbox efek.",
-      image: "https://images.unsplash.com/photo-1690977678440-c2f32ac829e1",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184887/photo5_t2qrcq.jpg",
       tags: ["Gatsby", "GraphQL", "Contentful"],
       url: "https://fotograferprofesional.com",
       github: null,
@@ -85,7 +90,8 @@ const Portfolio = () => {
       category: "Landing Page",
       description:
         "Halaman penjualan berkonversi tinggi untuk produk SaaS startup teknologi.",
-      image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184978/photo9_eyzrgu.jpg",
       tags: ["HTML/CSS", "JavaScript", "AOS"],
       url: "https://produkstartup.com",
       github: "https://github.com/username/startup-landing",
@@ -97,7 +103,8 @@ const Portfolio = () => {
       category: "Web App",
       description:
         "Aplikasi kolaborasi tim dengan fitur task management dan real-time updates.",
-      image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12",
+      image:
+        "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748185138/photo8_wnoyev.jpg",
       tags: ["React", "Firebase", "Redux"],
       url: "https://projectapp.example.com",
       github: "https://github.com/username/project-management-app",
@@ -173,6 +180,7 @@ const Portfolio = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
+                    layout="fill"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
@@ -210,23 +218,23 @@ const Portfolio = () => {
 
                   {/* Links */}
                   <div className="flex space-x-3">
-                    <a
+                    <Link
                       href={project.url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center text-blue-600 hover:text-blue-800 text-sm font-medium"
                     >
                       <FiExternalLink className="mr-1" /> Kunjungi
-                    </a>
+                    </Link>
                     {project.github && (
-                      <a
+                      <Link
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center text-gray-600 hover:text-gray-800 text-sm font-medium"
                       >
                         <FiGithub className="mr-1" /> Kode
-                      </a>
+                      </Link>
                     )}
                   </div>
                 </div>
@@ -282,6 +290,7 @@ const Portfolio = () => {
               <Image
                 src={selectedProject.image}
                 alt={selectedProject.title}
+                layout="fill"
                 className="w-full h-96 object-cover"
               />
             </div>
@@ -296,23 +305,23 @@ const Portfolio = () => {
                   </h3>
                 </div>
                 <div className="flex space-x-3 mt-4 md:mt-0">
-                  <a
+                  <Link
                     href={selectedProject.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg inline-flex items-center text-sm"
                   >
                     <FiExternalLink className="mr-1" /> Kunjungi Website
-                  </a>
+                  </Link>
                   {selectedProject.github && (
-                    <a
+                    <Link
                       href={selectedProject.github}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded-lg inline-flex items-center text-sm"
                     >
                       <FiGithub className="mr-1" /> Lihat Kode
-                    </a>
+                    </Link>
                   )}
                 </div>
               </div>

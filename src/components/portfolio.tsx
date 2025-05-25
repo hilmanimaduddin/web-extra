@@ -11,7 +11,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Website Bisnis",
     description:
       "Website modern untuk restoran fine dining dengan sistem reservasi online dan menu digital.",
-    image: "https://images.unsplash.com/photo-1481487196290-c152efe083f5",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184824/photo3_ocfgy7.jpg",
     tags: ["Responsive", "CMS", "Reservasi Online"],
     link: "/portfolio",
     featured: true,
@@ -22,7 +23,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Toko Online",
     description:
       "Platform e-commerce lengkap untuk brand fashion lokal dengan multi-pembayaran.",
-    image: "https://images.unsplash.com/photo-1727632027836-321f7da24681",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184850/photo4_t76sp4.jpg",
     tags: ["E-Commerce", "Payment Gateway", "Mobile Friendly"],
     link: "/portfolio",
     featured: true,
@@ -33,7 +35,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Website Profesional",
     description:
       "Gallery online interaktif untuk fotografer profesional dengan lightbox efek.",
-    image: "https://images.unsplash.com/photo-1690977678440-c2f32ac829e1",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184887/photo5_t2qrcq.jpg",
     tags: ["Gallery", "Animasi", "Minimalis"],
     link: "/portfolio",
     featured: false,
@@ -44,7 +47,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Aplikasi Web",
     description:
       "Aplikasi web custom untuk manajemen siswa, guru, dan administrasi sekolah.",
-    image: "https://images.unsplash.com/photo-1563394867331-e687a36112fd",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184911/photo6_icr4ub.jpg",
     tags: ["Custom App", "Database", "User Management"],
     link: "/portfolio",
     featured: true,
@@ -55,7 +59,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Website Bisnis",
     description:
       "Website booking paket travel dengan integrasi sistem pembayaran dan gallery destinasi.",
-    image: "https://images.unsplash.com/photo-1578894381163-e72c17f2d45f",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184949/photo7_np40bs.jpg",
     tags: ["Booking System", "Destinasi", "Responsive"],
     link: "/portfolio",
     featured: false,
@@ -66,7 +71,8 @@ const portfolioItems: PortfolioItem[] = [
     category: "Website Perusahaan",
     description:
       "Website perusahaan untuk startup teknologi dengan desain futuristik dan interaktif.",
-    image: "https://images.unsplash.com/photo-1559028012-481c04fa702d",
+    image:
+      "https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184978/photo9_eyzrgu.jpg",
     tags: ["Modern Design", "Animasi", "Company Profile"],
     link: "/portfolio",
     featured: true,
@@ -153,6 +159,7 @@ const Portfolio = () => {
                   <Image
                     src={item.image}
                     alt={item.title}
+                    layout="fill"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   {item.featured && (
@@ -185,7 +192,7 @@ const Portfolio = () => {
                   </div>
 
                   {/* Button */}
-                  <a
+                  <Link
                     href={item.link}
                     className="inline-flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
                   >
@@ -203,7 +210,7 @@ const Portfolio = () => {
                         d="M14 5l7 7m0 0l-7 7m7-7H3"
                       />
                     </svg>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </motion.div>

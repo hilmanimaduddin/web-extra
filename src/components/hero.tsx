@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import myImage from "../../public/images/photo11.jpg";
 
 const Hero = () => {
   return (
@@ -68,14 +69,14 @@ const Hero = () => {
               </div>
               <div className="flex items-center">
                 <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((item) => (
+                  {/* {[1, 2, 3, 4].map((item) => (
                     <Image
                       key={item}
                       src={`https://i.pravatar.cc/150?img=${item}`}
                       alt="Client"
                       className="w-8 h-8 rounded-full border-2 border-white"
                     />
-                  ))}
+                  ))} */}
                 </div>
                 <span className="ml-2 text-gray-700">500+ Klien Puas</span>
               </div>
@@ -93,8 +94,10 @@ const Hero = () => {
                 <div className="absolute -top-6 -left-6 w-full h-full bg-blue-200 rounded-2xl"></div>
                 <div className="relative bg-white p-2 rounded-2xl shadow-2xl border border-gray-100">
                   <Image
-                    src="https://plus.unsplash.com/premium_photo-1720287601300-cf423c3d6760?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src={myImage}
                     alt="Website Dashboard Preview"
+                    width={800} // tambahkan properti width
+                    height={600} // tambahkan properti height
                     className="rounded-xl w-full h-auto"
                   />
                 </div>
