@@ -95,9 +95,9 @@ const Hero = () => {
                   <Image
                     src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184685/growtika-YOEHA0Ou8ZY-unsplash_pxtgbx.jpg"
                     alt="Website Dashboard Preview"
-                    layout="fill"
-                    width={800} // tambahkan properti width
-                    height={600} // tambahkan properti height
+                    width={800}
+                    height={800}
+                    objectFit="cover"
                     className="rounded-xl w-full h-auto"
                   />
                 </div>
