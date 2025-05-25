@@ -281,7 +281,9 @@ const ServicesComp = () => {
               <Image
                 src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748185245/photo10_qgcuph.jpg"
                 alt="Proses Pembuatan Website"
-                layout="fill"
+                // layout="fill"
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
               />
             </div>

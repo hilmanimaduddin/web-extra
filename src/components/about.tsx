@@ -39,7 +39,8 @@ const About = () => {
               <Image
                 src="https://res.cloudinary.com/dlcgwbdtv/image/upload/v1748184738/photo-1522071820081-009f0129c71c_1_yhbmgn.jpg"
                 alt="Tim WebExtra"
-                layout="fill"
+                width={500}
+                height={500}
                 className="w-full h-full object-cover"
               />
             </div>
